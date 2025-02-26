@@ -6,7 +6,6 @@
 
 Collection of tools PostgreSQL clients. Available tools:
 
-* 
 * [pg_amcheck](https://www.postgresql.org/docs/17/app-pgamcheck.html)
 * [pg_basebackup](https://www.postgresql.org/docs/17/app-pgbasebackup.html)
 * [pg_dump](https://www.postgresql.org/docs/17/app-pgdump.html)
