@@ -28,7 +28,7 @@ Collection of tools PostgreSQL clients. Available tools:
 ## Docker
 
 ```shell
-$ KUBECONFIG=~/CLUSTERS/facchini.yaml kubectl port-forward -n empirix-cloud svc/nla-postgres-ha-psqlha-pgpool 5432:5432
+$ kubectl port-forward -n empirix-cloud svc/nla-postgres-ha-psqlha-pgpool 5432:5432
 Forwarding from 127.0.0.1:5432 -> 5432
 Forwarding from [::1]:5432 -> 5432
 ...
