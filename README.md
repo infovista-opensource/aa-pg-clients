@@ -9,9 +9,9 @@ Collection of tools PostgreSQL clients. Available tools:
 * 
 * [pg_amcheck](https://www.postgresql.org/docs/17/app-pgamcheck.html)
 * [pg_basebackup](https://www.postgresql.org/docs/17/app-pgbasebackup.html)
-* [pg_dump]https://www.postgresql.org/docs/17/app-pgdump.html)
+* [pg_dump](https://www.postgresql.org/docs/17/app-pgdump.html)
 * [pg_dumpall](https://www.postgresql.org/docs/17/app-pg-dumpall.html)
-* [pg_isready]https://www.postgresql.org/docs/17/app-pg-isready.html
+* [pg_isready](https://www.postgresql.org/docs/17/app-pg-isready.html)
 * [pg_receivewal](https://www.postgresql.org/docs/17/app-pgreceivewal.html)
 * [pg_recvlogical](https://www.postgresql.org/docs/17/app-pgrecvlogical.html)
 * [pg_restore](https://www.postgresql.org/docs/17/app-pgrestore.html)
