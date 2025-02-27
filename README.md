@@ -6,17 +6,17 @@
 
 Collection of tools PostgreSQL clients. Available tools:
 
-* [pg_amcheck](https://www.postgresql.org/docs/17/app-pgamcheck.html)
-* [pg_basebackup](https://www.postgresql.org/docs/17/app-pgbasebackup.html)
-* [pg_dump](https://www.postgresql.org/docs/17/app-pgdump.html)
-* [pg_dumpall](https://www.postgresql.org/docs/17/app-pg-dumpall.html)
-* [pg_isready](https://www.postgresql.org/docs/17/app-pg-isready.html)
-* [pg_receivewal](https://www.postgresql.org/docs/17/app-pgreceivewal.html)
-* [pg_recvlogical](https://www.postgresql.org/docs/17/app-pgrecvlogical.html)
-* [pg_restore](https://www.postgresql.org/docs/17/app-pgrestore.html)
-* [pg_verifybackup](https://www.postgresql.org/docs/17/app-pgverifybackup.html)
-* [pgbench](https://www.postgresql.org/docs/17/pgbench.html)
-* [psql](https://www.postgresql.org/docs/17/app-psql.html)
+* [pg_amcheck](https://www.postgresql.org/docs/13/app-pgamcheck.html)
+* [pg_basebackup](https://www.postgresql.org/docs/13/app-pgbasebackup.html)
+* [pg_dump](https://www.postgresql.org/docs/13/app-pgdump.html)
+* [pg_dumpall](https://www.postgresql.org/docs/13/app-pg-dumpall.html)
+* [pg_isready](https://www.postgresql.org/docs/13/app-pg-isready.html)
+* [pg_receivewal](https://www.postgresql.org/docs/13/app-pgreceivewal.html)
+* [pg_recvlogical](https://www.postgresql.org/docs/13/app-pgrecvlogical.html)
+* [pg_restore](https://www.postgresql.org/docs/13/app-pgrestore.html)
+* [pg_verifybackup](https://www.postgresql.org/docs/13/app-pgverifybackup.html)
+* [pgbench](https://www.postgresql.org/docs/13/pgbench.html)
+* [psql](https://www.postgresql.org/docs/13/app-psql.html)
 
 
 
