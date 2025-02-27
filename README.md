@@ -1,22 +1,22 @@
 # aa-psql-client
 
-![Static Badge](https://img.shields.io/badge/PostgresClient_17-brightgreen) ![Static Badge](https://img.shields.io/badge/alpine-3.21.3-brightgreen)
+![Static Badge](https://img.shields.io/badge/PostgresClient_12-brightgreen) ![Static Badge](https://img.shields.io/badge/alpine-3.18.12-brightgreen)
 
 
 
 Collection of tools PostgreSQL clients. Available tools:
 
-* [pg_amcheck](https://www.postgresql.org/docs/17/app-pgamcheck.html)
-* [pg_basebackup](https://www.postgresql.org/docs/17/app-pgbasebackup.html)
-* [pg_dump](https://www.postgresql.org/docs/17/app-pgdump.html)
-* [pg_dumpall](https://www.postgresql.org/docs/17/app-pg-dumpall.html)
-* [pg_isready](https://www.postgresql.org/docs/17/app-pg-isready.html)
-* [pg_receivewal](https://www.postgresql.org/docs/17/app-pgreceivewal.html)
-* [pg_recvlogical](https://www.postgresql.org/docs/17/app-pgrecvlogical.html)
-* [pg_restore](https://www.postgresql.org/docs/17/app-pgrestore.html)
-* [pg_verifybackup](https://www.postgresql.org/docs/17/app-pgverifybackup.html)
-* [pgbench](https://www.postgresql.org/docs/17/pgbench.html)
-* [psql](https://www.postgresql.org/docs/17/app-psql.html)
+* [pg_amcheck](https://www.postgresql.org/docs/12/app-pgamcheck.html)
+* [pg_basebackup](https://www.postgresql.org/docs/12/app-pgbasebackup.html)
+* [pg_dump](https://www.postgresql.org/docs/12/app-pgdump.html)
+* [pg_dumpall](https://www.postgresql.org/docs/12/app-pg-dumpall.html)
+* [pg_isready](https://www.postgresql.org/docs/12/app-pg-isready.html)
+* [pg_receivewal](https://www.postgresql.org/docs/12/app-pgreceivewal.html)
+* [pg_recvlogical](https://www.postgresql.org/docs/12/app-pgrecvlogical.html)
+* [pg_restore](https://www.postgresql.org/docs/12/app-pgrestore.html)
+* [pg_verifybackup](https://www.postgresql.org/docs/12/app-pgverifybackup.html)
+* [pgbench](https://www.postgresql.org/docs/12/pgbench.html)
+* [psql](https://www.postgresql.org/docs/12/app-psql.html)
 
 
 
