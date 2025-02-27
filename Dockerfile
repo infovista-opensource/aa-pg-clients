@@ -1,8 +1,8 @@
-FROM alpine:3.20.6
+FROM alpine:3.19.7
 
 RUN apk update && apk upgrade &&    \
     apk add --no-cache              \
-    postgresql14-client &&          \
+    postgresql13-client &&          \
     rm -rf /var/cache/apk
 
 USER 1001

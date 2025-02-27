@@ -1,6 +1,6 @@
 # aa-psql-client
 
-![Static Badge](https://img.shields.io/badge/PostgresClient_14-brightgreen) ![Static Badge](https://img.shields.io/badge/alpine-3.20.6-brightgreen)
+![Static Badge](https://img.shields.io/badge/PostgresClient_13-brightgreen) ![Static Badge](https://img.shields.io/badge/alpine-3.19.7-brightgreen)
 
 
 
