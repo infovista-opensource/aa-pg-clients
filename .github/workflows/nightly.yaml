@@ -1,4 +1,4 @@
-name: nightly ci
+name: pg client nightly ci
 
 on:
     workflow_dispatch:

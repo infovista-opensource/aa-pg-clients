@@ -1,5 +1,5 @@
 
-name: pg client
+name: pg client dev
 
 on:
     workflow_dispatch:
