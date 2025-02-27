@@ -51,3 +51,12 @@ jobs:
               uses: aquasecurity/trivy-action@master
               with:
                   image-ref: 'piccio/aa-pg-client:${{ github.ref_name }}'
+                  format: 'template'
+                  template: '@/contrib/sarif.tpl'
+                  output: 'trivy-results.sarif'
+                  severity: 'CRITICAL,HIGH,MEDIUM,LOW'
+        
+            - name: Upload Trivy scan results to GitHub Security tab
+              uses: github/codeql-action/upload-sarif@4
+              with:
+                  sarif_file: 'trivy-results.sarif'
