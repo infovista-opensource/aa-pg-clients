@@ -9,7 +9,7 @@ on:
             - 'support/**'
 
 jobs:
-    build:
+    linter:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code.
@@ -21,16 +21,27 @@ jobs:
                   dockerfile: Dockerfile
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code.
+              uses: actions/checkout@v4
 
-            - name: Login to Docker Hub
-              uses: docker/login-action@v3
-              with:
-                  username: ${{ secrets.DOCKERHUB_USERNAME }}
-                  password: ${{ secrets.DOCKERHUB_TOKEN }}
-                  
             - name: Build the Docker image
               uses: docker/build-push-action@v6
               id: docker_build
               with:
                   push: true
-                  tags: piccio/aa-pg-client:0.0.0-${{ github.ref_name }}
+                  tags: piccio/aa-pg-client:${{ github.ref_name }}
+
+    security:
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+            - name: Checkout code.
+              uses: actions/checkout@v4
+
+            - name: Trivy scan
+              uses: aquasecurity/trivy-action@master
+              with:
+                  image-ref: 'piccio/aa-pg-client:${{ github.ref_name }}'
