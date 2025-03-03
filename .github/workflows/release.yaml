@@ -25,4 +25,4 @@ jobs:
               id: docker_build
               with:
                   push: true
-                  tags: piccio/aa-pg-client:${{ github.ref_name }}
+                  tags: piccio/aa-pg-clients:${{ github.ref_name }}
