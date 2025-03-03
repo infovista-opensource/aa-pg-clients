@@ -62,7 +62,7 @@ jobs:
             - name: Trivy scan
               uses: aquasecurity/trivy-action@master
               with:
-                  image-ref: 'piccio/aa-pg-client:${{ github.ref_name }}'
+                  image-ref: 'piccio/aa-pg-client:${{ env.SUPPORT_BRANCH }}-${{ github.sha }}'
                   format: 'template'
                   template: '@/contrib/sarif.tpl'
                   output: 'trivy-results.sarif'
