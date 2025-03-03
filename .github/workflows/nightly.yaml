@@ -23,7 +23,7 @@ jobs:
               id: docker_build
               with:
                   push: true
-                  tags: piccio/aa-pg-client:${{ github.ref_name }}-nightly
+                  tags: piccio/aa-pg-clients:${{ github.ref_name }}-nightly
 
     security:
         runs-on: ubuntu-latest
@@ -35,7 +35,7 @@ jobs:
             - name: Trivy scan
               uses: aquasecurity/trivy-action@master
               with:
-                image-ref: 'piccio/aa-pg-client:${{ github.ref_name }}'
+                image-ref: 'piccio/aa-pg-clients:${{ github.ref_name }}'
                 format: 'template'
                 template: '@/contrib/sarif.tpl'
                 output: 'trivy-results.sarif'
