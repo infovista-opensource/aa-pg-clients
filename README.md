@@ -1,6 +1,6 @@
 # aa-psql-client
 
-![Static Badge](https://img.shields.io/badge/PostgresClient_17-brightgreen) ![Static Badge](https://img.shields.io/badge/alpine-3.21.3-brightgreen)
+![Static Badge](https://img.shields.io/badge/Postgres_Client-17-blue) ![Static Badge](https://img.shields.io/badge/alpine-3.21.3-brightgreen)
 
 
 
@@ -48,7 +48,7 @@ Password for user postgres:
 ```
 
 ```shell
-$ docker run --rm --network host -e PGPASSWORD=<PASSWORD> piccio/aa-pg-client:0.0.1 psql -h 127.0.0.1 -U postgres postgres -c "select version()"
+$ docker run --rm --network host -e PGPASSWORD=<PASSWORD> piccio/aa-pg-client:17-r0 psql -h 127.0.0.1 -U postgres postgres -c "select version()"
                                           version                                           
 --------------------------------------------------------------------------------------------
  PostgreSQL 14.11 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
@@ -58,7 +58,7 @@ $ docker run --rm --network host -e PGPASSWORD=<PASSWORD> piccio/aa-pg-client:0.
 
 ```shell
 $ docker run piccio/aa-pg-client psql <psql_args> 
-docker run -it --rm --network host piccio/aa-pg-client:0.0.1 psql -h 127.0.0.1 -U postgres postgres
+docker run -it --rm --network host piccio/aa-pg-client:17-r0 psql -h 127.0.0.1 -U postgres postgres
 Password for user postgres: <THE PASSWORD>
 postgres=# select version();
                                           version                                           
@@ -83,7 +83,7 @@ Usage:
 ## Kubernetes
 
 ```shell
-kubectl -n  empirix-cloud run foo --image=piccio/aa-pg-client:0.0.1 --rm -it --command -- /bin/sh
+kubectl -n  empirix-cloud run foo --image=piccio/aa-pg-client:17-r0 --rm -it --command -- /bin/sh
 
 foo:/# psql -h nla-postgres-ha-psqlha-pgpool.empirix-cloud.svc -p 5432 -U postgres
 Password for user postgres: 
