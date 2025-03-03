@@ -5,8 +5,11 @@ on:
     workflow_dispatch:
     push:
         branches:
-            - 'main'
-            - 'support/**'
+          - 'main'
+          - 'support/**'
+        paths-ignore:
+          - README.md
+          - LICENCE
 
 jobs:
     linter:
