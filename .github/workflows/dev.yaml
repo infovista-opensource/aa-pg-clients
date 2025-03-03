@@ -50,7 +50,7 @@ jobs:
               id: docker_build
               with:
                   push: true
-                  tags: piccio/aa-pg-client:${{ VERSION }}-${{ github.sha }}
+                  tags: piccio/aa-pg-client:${{ env.VERSION }}-${{ github.sha }}
 
     security:
         runs-on: ubuntu-latest
