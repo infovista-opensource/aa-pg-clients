@@ -5,9 +5,12 @@ on:
     workflow_dispatch:
     push:
         branches:
-            - 'main'
-            - 'support/**'
-
+          - 'main'
+          - 'support/**'
+        paths-ignore:
+          - README.md
+          - LICENSE
+          
 env:
   SUPPORT_VERSION: "15"
   
