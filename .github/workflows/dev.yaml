@@ -28,6 +28,7 @@ jobs:
               uses: actions/checkout@v4
 
             - name: Branch name
+              id: support_version
               run: |
               
                 BRANCH_NAME=$(echo "${GITHUB_REF##*/}")  # Get the branch name from GITHUB_REF
@@ -62,7 +63,7 @@ jobs:
             - name: Trivy scan
               uses: aquasecurity/trivy-action@master
               with:
-                  image-ref: 'piccio/aa-pg-client:${{ env.SUPPORT_BRANCH }}-${{ github.sha }}'
+                  image-ref: 'piccio/aa-pg-client:${{ build.support_version.outputs.SUPPORT_BRANCH }}-${{ github.sha }}'
                   format: 'template'
                   template: '@/contrib/sarif.tpl'
                   output: 'trivy-results.sarif'
