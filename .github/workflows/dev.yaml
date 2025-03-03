@@ -8,6 +8,9 @@ on:
             - 'main'
             - 'support/**'
 
+env:
+  SUPPORT_VERSION: "15"
+  
 jobs:
     linter:
         runs-on: ubuntu-latest
@@ -38,7 +41,7 @@ jobs:
               id: docker_build
               with:
                   push: true
-                  tags: piccio/aa-pg-client:${{ github.ref_name }}
+                  tags: piccio/aa-pg-client:${{ env.SUPPORT_VERSION }}-${{ github.sha }}
 
     security:
         runs-on: ubuntu-latest
@@ -50,7 +53,7 @@ jobs:
             - name: Trivy scan
               uses: aquasecurity/trivy-action@master
               with:
-                  image-ref: 'piccio/aa-pg-client:${{ github.ref_name }}'
+                  image-ref: 'piccio/aa-pg-client:${{ env.SUPPORT_VERSION }}-${{ github.sha }}'
                   format: 'template'
                   template: '@/contrib/sarif.tpl'
                   output: 'trivy-results.sarif'
