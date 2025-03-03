@@ -19,7 +19,13 @@ Collection of tools PostgreSQL clients. Available tools:
 * [psql](https://www.postgresql.org/docs/15/app-psql.html)
 
 
+## Docker
 
+Docker image are available on [piccio/aa-pg-clients](https://hub.docker.com/repository/docker/piccio/aa-pg-clients/general) repository
+
+Image specification: `piccio/aa-pg-clients`:`<pg_client_major_version>`-r`<internal_build>`
+
+i.e. : `piccio/aa-pg-clients`:**15-r0**
 
 
 ## Use Cases
