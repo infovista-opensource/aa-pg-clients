@@ -44,7 +44,7 @@ Run
 
 
 ```shell
-$ docker run -it --rm --network host piccio/aa-pg-client:0.0.1 psql -h 127.0.0.1 -U postgres postgres -c "select version()"
+$ docker run -it --rm --network host piccio/aa-pg-client:17-r0 psql -h 127.0.0.1 -U postgres postgres -c "select version()"
 Password for user postgres: 
                                           version                                           
 --------------------------------------------------------------------------------------------
@@ -75,7 +75,7 @@ postgres=# select version();
 
 
 ```
-$ docker run -it --rm piccio/aa-pg-client:0.0.1  /bin/sh
+$ docker run -it --rm piccio/aa-pg-client:17-r0  /bin/sh
 ~ $ id
 uid=1001 gid=0(root) groups=0(root)
 ~ $ psql --help
