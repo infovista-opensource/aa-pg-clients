@@ -1,0 +1,16 @@
+name: deploy test
+
+on:
+    workflow_dispatch:
+
+jobs:
+  run on: ubuntu-latest
+  steps:
+  - name: create cluster
+    uses: helm/kind-action@v1
+
+  - name: Get kubeconfig
+    run: cat $HOME/.kube/config
+
+  - run: kubectl cluster-info
+  - run: kubectl get pods -n kube-system
